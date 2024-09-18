@@ -10,7 +10,7 @@ module.exports.scrapeRbiPdfs = async (req, res) => {
     const page = await browser.newPage();
 
     try {
-        await page.goto(req.query.url, { waitUntil: "networkidle2" });
+        await page.goto(req.query.url, { waitUntil: "load" });
 
         const scrappedData = await page.evaluate(() => {
             const pdfTable = document.querySelector(".tablebg");
@@ -227,7 +227,7 @@ module.exports.scrapeRbiSpeeches = async (req, res) => {
     const page = await browser.newPage();
 
     try {
-        await page.goto(url, { waitUntil: "networkidle2" });
+        await page.goto(url, { waitUntil: "load" });
 
         // Hover over "Speeches & Media Interactions"
         const menuItem = await page.waitForSelector("text=Speeches & Media Interactions", {
@@ -235,9 +235,10 @@ module.exports.scrapeRbiSpeeches = async (req, res) => {
         });
         await menuItem.hover();
 
-        const siblingElement = await page.evaluateHandle((menuItem) => {
-            return menuItem.nextElementSibling;
-        }, menuItem);
+        const siblingElement = await page.evaluateHandle(
+            (menuItem) => menuItem.nextElementSibling,
+            menuItem
+        );
 
         const speechesItem = await page.evaluateHandle((ulElement) => {
             const listItems = ulElement.querySelectorAll("li");
@@ -257,13 +258,23 @@ module.exports.scrapeRbiSpeeches = async (req, res) => {
         const currentYear = new Date().getFullYear();
 
         let totalNewData = 0;
+        let totalscrapedData = 0;
+
+        // Fetch all existing speeches from the database and store them in a hashmap
+        const allSpeeches = await Speech.find({});
+        const speechMap = new Map();
+        allSpeeches.forEach((speech) => {
+            const key = `${speech.date}-${speech.title}-${speech.speechLink}-${speech.pdfLink}`;
+            speechMap.set(key, true);
+        });
+
+        console.log("speechMap", speechMap);
 
         // Loop through years until there is no data left
         for (let year = currentYear; year >= 1990; year--) {
             await delay(2000);
             console.log(`Processing year: ${year}`);
 
-            // Method: 1
             await page.evaluate((year) => {
                 const element = document.getElementById(`${year}0`);
                 if (element) {
@@ -271,53 +282,10 @@ module.exports.scrapeRbiSpeeches = async (req, res) => {
                 }
             }, year);
 
-            // Method: 2
-            // if (year == new Date().getFullYear() - 9) {
-            //     await page.click(`#divArchiveMain`);
-            // }
-
-            // // If top button is visible then click on top
-            // await page.evaluate(() => {
-            //     const element = document.getElementById(`backToTop`);
-            //     if (
-            //         element &&
-            //         (getComputedStyle(element).display === "inline" ||
-            //             getComputedStyle(element).display === "block")
-            //     ) {
-            //         console.log("Found top button and clicked");
-            //         element.click();
-            //     } else {
-            //         console.log("Top button not found or not visible");
-            //     }
-            // });
-
-            // // Then click on year button
-            // await page.waitForSelector(`#btn${year}`, { visible: true });
-            // await page.click(`#btn${year}`);
-
-            // // If top button is visible then click on top
-            // await page.evaluate(() => {
-            //     const element = document.getElementById(`backToTop`);
-            //     if (
-            //         element &&
-            //         (getComputedStyle(element).display === "inline" ||
-            //             getComputedStyle(element).display === "block")
-            //     ) {
-            //         console.log("Found top button and clicked");
-            //         element.click();
-            //     } else {
-            //         console.log("Top button not found or not visible");
-            //     }
-            // });
-
-            // // Then click on All Months button
-            // await page.waitForSelector(`a[id="${year}0"]`, { visible: true });
-            // await page.click(`a[id="${year}0"]`);
-
             await page.waitForSelector(".tablebg", { visible: true });
 
             // Scrape the data
-            const scrappedData = await page.evaluate(() => {
+            const scrapedData = await page.evaluate(() => {
                 const pdfTable = document.querySelector(".tablebg");
                 if (!pdfTable) return [];
 
@@ -349,34 +317,36 @@ module.exports.scrapeRbiSpeeches = async (req, res) => {
                 return pdfs;
             });
 
-            // After retrieving scrappedData, check for duplicates in the database
-            const pdfPromises = scrappedData.map(async (speechData) => {
-                const speech = await Speech.findOne({
-                    date: speechData.date,
-                    title: speechData.title,
-                    speechLink: speechData.speechLink,
-                    pdfLink: speechData.pdfLink,
-                    pdfSize: speechData.pdfSize,
-                });
+            console.log(`scrapedData for ${year}= ${scrapedData.length}`);
 
-                // If speech does not exist, return the data
-                return !speech ? speechData : null;
+            totalscrapedData += scrapedData.length;
+            // Check for duplicates using the hashmap and filter out existing data
+            const newSpeeches = scrapedData.filter((speechData) => {
+                const key = `${speechData.date}-${speechData.title}-${speechData.speechLink}-${speechData.pdfLink}`;
+                return !speechMap.has(key);
             });
 
-            // Wait for all promises to resolve and filter out null values
-            const pdfs = (await Promise.all(pdfPromises)).filter(Boolean);
-
-            if (pdfs.length > 0) {
-                await Speech.insertMany(pdfs);
+            // Insert new speeches into the database
+            if (newSpeeches.length > 0) {
+                await Speech.insertMany(newSpeeches);
                 console.log(`Data for ${year} saved!`);
-            } else {
-                console.log(`No data found for ${year}`);
-            }
+                totalNewData += newSpeeches.length;
 
-            totalNewData += pdfs.length;
+                // Update the hashmap with newly added speeches
+                newSpeeches.forEach((speechData) => {
+                    const key = `${speechData.date}-${speechData.title}-${speechData.speechLink}-${speechData.pdfLink}`;
+                    speechMap.set(key, true);
+                });
+            } else {
+                console.log(`No new data found for ${year}`);
+            }
         }
 
-        res.json({ message: "Scraping and saving data completed!", totalNewData });
+        res.json({
+            message: "Scraping and saving data completed!",
+            totalNewData,
+            totalscrapedData,
+        });
     } catch (error) {
         console.error("An error occurred:", error);
         res.status(500).send("An error occurred while scraping.");

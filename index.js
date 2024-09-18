@@ -1,8 +1,10 @@
 require("dotenv").config();
-require("./config/mongoConfig.js");
 const express = require("express");
-
 const app = express();
+
+const connectToDB = require("./config/mongoConfig.js");
+connectToDB();
+
 app.use(express.json());
 
 app.use("/", require("./routes"));
