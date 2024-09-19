@@ -1,0 +1,860 @@
+[
+  {
+    "count": 10000,
+    "count_string": "1000+",
+    "cursor": "eyJkeW5hbWljX2ZpbHRlcl9sYWJlbF9pZHMiOlsxLDldLCJsYXN0X3NlbGVjdGVkX2xhYmVsX3ZhbHVlX2lkcyI6W10sImxhc3RfYWxsX2xhYmVsX3ZhbHVlX2lkcyI6W1syNDE2LDUxODcsMjc2LDM0MCwzNzY0LDI2NDUsMjk0LDI0MjMsMjQwOSwyNDExXSxbNDMxNCw1MjExXSxbMzIsMzMsMjE3OSwzNiwzNywzOSw0MCw0MSw0Miw0Myw0NCw0NSw0Niw0NywyMzIyLDIzMjYsMjksMzBdLFsxLDIsNzU2LDc1OCw3NTksNzYwLDc2MSw3NjIsNzYzXSxbODUzLDk4Myw0NTksNDYwXSxbMTc2LDE2MSwxMTYsMTQyXSxbNDQzLDQ0NV0sWzIyMjgsMjIyOSwyMjMwLDIyMzFdLFs0NDgsNDQ5LDQ1MCwyMTQ3LDQ1MSwyMTQ4LDQ1Miw0NTMsNDU0LDgzOSw4NDAsODQxLDg0Miw4NDMsODQ0LDk3Myw2MzAsNjMxLDYzMiw0NDddLFs0NTUsNDU2LDQ1Nyw0NTgsNjU0XSxbMzc2Myw1MjEwXSxbNTIwOCw1MjEyXSxbNDE0Nyw0MTQ5LDQxNTAsMjg3MSw0MTU2LDIyMDUsMjIwN10sWzIxODZdXX0=",
+    "session_state": "eyJkeW5hbWljX2ZpbHRlcl9sYWJlbF9pZHMiOlsxLDldLCJsYXN0X3NlbGVjdGVkX2xhYmVsX3ZhbHVlX2lkcyI6W10sImxhc3RfYWxsX2xhYmVsX3ZhbHVlX2lkcyI6W1syNDE2LDUxODcsMjc2LDM0MCwzNzY0LDI2NDUsMjk0LDI0MjMsMjQwOSwyNDExXSxbNDMxNCw1MjExXSxbMzIsMzMsMjE3OSwzNiwzNywzOSw0MCw0MSw0Miw0Myw0NCw0NSw0Niw0NywyMzIyLDIzMjYsMjksMzBdLFsxLDIsNzU2LDc1OCw3NTksNzYwLDc2MSw3NjIsNzYzXSxbODUzLDk4Myw0NTksNDYwXSxbMTc2LDE2MSwxMTYsMTQyXSxbNDQzLDQ0NV0sWzIyMjgsMjIyOSwyMjMwLDIyMzFdLFs0NDgsNDQ5LDQ1MCwyMTQ3LDQ1MSwyMTQ4LDQ1Miw0NTMsNDU0LDgzOSw4NDAsODQxLDg0Miw4NDMsODQ0LDk3Myw2MzAsNjMxLDYzMiw0NDddLFs0NTUsNDU2LDQ1Nyw0NTgsNjU0XSxbMzc2Myw1MjEwXSxbNTIwOCw1MjEyXSxbNDE0Nyw0MTQ5LDQxNTAsMjg3MSw0MTU2LDIyMDUsMjIwN10sWzIxODZdXX0=",
+    "all_filters": [
+      {
+        "label_id": 1,
+        "label_name": "Category",
+        "label": "Category",
+        "type": "list",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 276,
+            "display_name": "Clutches",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjc2In0=",
+            "image_url": "https://images.meesho.com/images/marketing/1659982850410.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2645,
+            "display_name": "Cross Body Bags & Sling Bags",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjY0NSJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1659982685217.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 294,
+            "display_name": "Handbags",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjk0In0=",
+            "image_url": "https://images.meesho.com/images/marketing/758c75fa-efdc-48b5-8c42-89b6a8052d2c.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2416,
+            "display_name": "Handbags Set",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjQxNiJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1659981854986.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2409,
+            "display_name": "Potlis",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjQwOSJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1659982551697.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 340,
+            "display_name": "Slingbags",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMzQwIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/286bb308-611e-4b1f-9931-cd225cdd61d0.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2411,
+            "display_name": "Waist Bags",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjQxMSJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1659983155873.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2423,
+            "display_name": "Wallets",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjQyMyJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1659982950649.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 3764,
+            "display_name": "Women Backpacks",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMzc2NCJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1663582624334.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 5187,
+            "display_name": "Women Slingbag",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiNTE4NyJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1704463344157.jpg",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 9,
+        "label_name": "Gender",
+        "label": "Gender",
+        "type": "pill",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 445,
+            "display_name": "Girls",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy45Iiwib3AiOiJpbiIsInZhbHVlIjoiNDQ1In0=",
+            "image_url": "https://images.meesho.com/images/marketing/1598808357482.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 443,
+            "display_name": "Women",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy45Iiwib3AiOiJpbiIsInZhbHVlIjoiNDQzIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/1598808287970.png",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 4,
+        "label_name": "Color",
+        "label": "Color",
+        "type": "pill",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 2322,
+            "display_name": "Beige",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiMjMyMiJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 29,
+            "display_name": "Black",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiMjkifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/c39647e6-d742-4e4e-bee8-f53c4fe3cad0.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 32,
+            "display_name": "Brown",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiMzIifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/ca1ae11b-875a-42b2-add8-ea7187d9c51b.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 36,
+            "display_name": "Grey",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiMzYifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/9f22262a-2f51-4e63-b7ba-56d4867db6d4.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 37,
+            "display_name": "Khaki",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiMzcifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/e2c7ca18-1810-4159-8e93-02cc611b9e3f.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2179,
+            "display_name": "Maroon",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiMjE3OSJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 39,
+            "display_name": "Multicolor",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiMzkifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/70934410-1797-49d0-a6a2-e897cec62e9d.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2326,
+            "display_name": "Nude",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiMjMyNiJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 40,
+            "display_name": "Olive",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiNDAifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/a6e87a22-6663-4fbf-983c-bf26e5c1a2f0.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 41,
+            "display_name": "Orange",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiNDEifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/e04809ec-7060-4ec4-a2ef-8971202ef6c9.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 42,
+            "display_name": "Pink",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiNDIifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/3e4855a2-ee1d-4ecb-b2e4-30581afc47ee.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 43,
+            "display_name": "Purple",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiNDMifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/e891d1eb-f5dd-4fb4-90d2-cfc87b9a5c0b.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 44,
+            "display_name": "Red",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiNDQifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/a6a889da-75f9-44c2-8c0a-631a0cd7ee53.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 47,
+            "display_name": "Silver",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiNDcifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/c359e487-7f9c-481c-8779-edd8884d801c.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 33,
+            "display_name": "Skin",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiMzMifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/85cd69c8-a2ca-4021-b0a6-8144c08692bb.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 45,
+            "display_name": "Skin",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiNDUifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/85cd69c8-a2ca-4021-b0a6-8144c08692bb.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 30,
+            "display_name": "White",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiMzAifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/52d9f9c7-3c42-46e1-934c-5fad24bfbd5a.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 46,
+            "display_name": "White",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40Iiwib3AiOiJpbiIsInZhbHVlIjoiNDYifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/52d9f9c7-3c42-46e1-934c-5fad24bfbd5a.png",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 7,
+        "label_name": "Fabric",
+        "label": "Fabric",
+        "type": "list",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 116,
+            "display_name": "Cotton",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy43Iiwib3AiOiJpbiIsInZhbHVlIjoiMTE2In0=",
+            "image_url": "https://images.meesho.com/images/marketing/a734c202-94a4-4cd2-98e4-b4c80ef6de78.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 142,
+            "display_name": "Leather",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy43Iiwib3AiOiJpbiIsInZhbHVlIjoiMTQyIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/be96bcaa-f19b-4793-89a1-1092e17f633d.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 161,
+            "display_name": "Polyester",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy43Iiwib3AiOiJpbiIsInZhbHVlIjoiMTYxIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/0857f908-4812-441e-8df3-d0dddd4088e8.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 176,
+            "display_name": "Synthetic",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy43Iiwib3AiOiJpbiIsInZhbHVlIjoiMTc2In0=",
+            "image_url": "https://images.meesho.com/images/marketing/81132d67-f9a5-40ce-b849-ae7b56b5e75b.png",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 15,
+        "label_name": "Price",
+        "label": "Price",
+        "type": "pill",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 840,
+            "display_name": "Under ₹ 149",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6Ijg0MCJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1614256270255.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 841,
+            "display_name": "Under ₹ 199",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6Ijg0MSJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1614256296308.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 842,
+            "display_name": "Under ₹ 249",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6Ijg0MiJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1614256315530.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 843,
+            "display_name": "Under ₹ 299",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6Ijg0MyJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1614256333525.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2147,
+            "display_name": "Under ₹ 349",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjIxNDcifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/1629716180946.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2148,
+            "display_name": "Under ₹ 399",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjIxNDgifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/1631106667408.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 973,
+            "display_name": "Under ₹ 449",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6Ijk3MyJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1602253467461.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 844,
+            "display_name": "Under ₹ 499",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6Ijg0NCJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1614256345068.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 839,
+            "display_name": "Under ₹ 99",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjgzOSJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1614256237327.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 447,
+            "display_name": "₹ 0  - ₹ 99",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ0NyJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 448,
+            "display_name": "₹ 100  - ₹ 149",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ0OCJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 449,
+            "display_name": "₹ 150  - ₹ 199",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ0OSJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 450,
+            "display_name": "₹ 200  - ₹ 249",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ1MCJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 451,
+            "display_name": "₹ 250 - ₹ 299",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ1MSJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 452,
+            "display_name": "₹ 300 - ₹ 399",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ1MiJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 453,
+            "display_name": "₹ 400 - ₹ 499",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ1MyJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 454,
+            "display_name": "₹ 500 - ₹ 599",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ1NCJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 630,
+            "display_name": "₹ 600 - ₹ 699",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjYzMCJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 631,
+            "display_name": "₹ 700 - ₹ 799",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjYzMSJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 632,
+            "display_name": "₹ 800 & Above",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNSIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjYzMiJ9",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 16,
+        "label_name": "Rating",
+        "label": "Rating",
+        "type": "list",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 456,
+            "display_name": "2.0 and above",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNiIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ1NiJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 457,
+            "display_name": "3.0 and above",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNiIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ1NyJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 455,
+            "display_name": "3.5 and above",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNiIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ1NSJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 458,
+            "display_name": "4.0 And Above",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNiIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQ1OCJ9",
+            "selected": false
+          },
+          {
+            "label_value_id": 654,
+            "display_name": "M-Trusted",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNiIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjY1NCJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1614851415969.png",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 5,
+        "label_name": "Combo",
+        "label": "Combo",
+        "type": "list",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 1,
+            "display_name": "Combos",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy41Iiwib3AiOiJpbiIsInZhbHVlIjoiMSJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1b84a6d4-9f98-41f9-9c5e-069be7dd64d1.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 756,
+            "display_name": "Multipack",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy41Iiwib3AiOiJpbiIsInZhbHVlIjoiNzU2In0=",
+            "selected": false
+          },
+          {
+            "label_value_id": 763,
+            "display_name": "Pack of 1",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy41Iiwib3AiOiJpbiIsInZhbHVlIjoiNzYzIn0=",
+            "selected": false
+          },
+          {
+            "label_value_id": 762,
+            "display_name": "Pack of 2",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy41Iiwib3AiOiJpbiIsInZhbHVlIjoiNzYyIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/1655815667628.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 761,
+            "display_name": "Pack of 3",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy41Iiwib3AiOiJpbiIsInZhbHVlIjoiNzYxIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/1625598094022.jpeg",
+            "selected": false
+          },
+          {
+            "label_value_id": 760,
+            "display_name": "Pack of 4",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy41Iiwib3AiOiJpbiIsInZhbHVlIjoiNzYwIn0=",
+            "selected": false
+          },
+          {
+            "label_value_id": 759,
+            "display_name": "Pack of 5",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy41Iiwib3AiOiJpbiIsInZhbHVlIjoiNzU5In0=",
+            "selected": false
+          },
+          {
+            "label_value_id": 758,
+            "display_name": "Pack of 6",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy41Iiwib3AiOiJpbiIsInZhbHVlIjoiNzU4In0=",
+            "image_url": "https://images.meesho.com/images/marketing/1625598127606.jpeg",
+            "selected": false
+          },
+          {
+            "label_value_id": 2,
+            "display_name": "Single",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy41Iiwib3AiOiJpbiIsInZhbHVlIjoiMiJ9",
+            "image_url": "https://images.meesho.com/images/marketing/6bac59be-988f-4f8d-be8d-729784f73ffb.png",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 6,
+        "label_name": "Discount",
+        "label": "Discount",
+        "type": "pill",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 459,
+            "display_name": "10% And Above",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy42Iiwib3AiOiJpbiIsInZhbHVlIjoiNDU5In0=",
+            "image_url": "https://images.meesho.com/images/marketing/1602257724400.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 460,
+            "display_name": "20% And Above",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy42Iiwib3AiOiJpbiIsInZhbHVlIjoiNDYwIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/1602257755215.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 983,
+            "display_name": "All discounted",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy42Iiwib3AiOiJpbiIsInZhbHVlIjoiOTgzIn0=",
+            "selected": false
+          },
+          {
+            "label_value_id": 853,
+            "display_name": "Deals",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy42Iiwib3AiOiJpbiIsInZhbHVlIjoiODUzIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/1615302194407.png",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 114,
+        "label_name": "Smartcoins",
+        "label": "Smartcoins",
+        "type": "list",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 3763,
+            "display_name": "Get Coins",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xMTQiLCJvcCI6ImluIiwidmFsdWUiOiIzNzYzIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/1710942933143.png",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 215,
+        "label_name": "Meesho Gold",
+        "label": "Meesho Gold",
+        "type": "list",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 5208,
+            "display_name": "Premium Products",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4yMTUiLCJvcCI6ImluIiwidmFsdWUiOiI1MjA4In0=",
+            "image_url": "https://images.meesho.com/images/marketing/1718956785619.png",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 162,
+        "label_name": "Meesho Mall",
+        "label": "Meesho Mall",
+        "type": "list",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 4314,
+            "display_name": "Mall Brands",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xNjIiLCJvcCI6ImluIiwidmFsdWUiOiI0MzE0In0=",
+            "image_url": "https://images.meesho.com/images/marketing/1718960460721.png",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 27,
+        "label_name": "Material",
+        "label": "Material",
+        "type": "list",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 2207,
+            "display_name": "Acrylic",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4yNyIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjIyMDcifQ==",
+            "selected": false
+          },
+          {
+            "label_value_id": 4150,
+            "display_name": "Canvas & Leather",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4yNyIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQxNTAifQ==",
+            "selected": false
+          },
+          {
+            "label_value_id": 4156,
+            "display_name": "Jute",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4yNyIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQxNTYifQ==",
+            "selected": false
+          },
+          {
+            "label_value_id": 2871,
+            "display_name": "Leather",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4yNyIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjI4NzEifQ==",
+            "image_url": "https://images.meesho.com/images/marketing/1655816467194.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2205,
+            "display_name": "Polypropylene",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4yNyIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjIyMDUifQ==",
+            "selected": false
+          },
+          {
+            "label_value_id": 4147,
+            "display_name": "Suede",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4yNyIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQxNDcifQ==",
+            "selected": false
+          },
+          {
+            "label_value_id": 4149,
+            "display_name": "Velvet",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4yNyIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjQxNDkifQ==",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 30,
+        "label_name": "Print Or Pattern Type",
+        "label": "Print Or Pattern Type",
+        "type": "list",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 2186,
+            "display_name": "Self-Design",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4zMCIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjIxODYifQ==",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 46,
+        "label_name": "Warranty Period",
+        "label": "Warranty Period",
+        "type": "pill",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 2228,
+            "display_name": "1 Month",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40NiIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjIyMjgifQ==",
+            "selected": false
+          },
+          {
+            "label_value_id": 2231,
+            "display_name": "1 Year",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40NiIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjIyMzEifQ==",
+            "selected": false
+          },
+          {
+            "label_value_id": 2229,
+            "display_name": "3 Months",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40NiIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjIyMjkifQ==",
+            "selected": false
+          },
+          {
+            "label_value_id": 2230,
+            "display_name": "6 Months",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy40NiIsIm9wIjoiaW4iLCJ2YWx1ZSI6IjIyMzAifQ==",
+            "selected": false
+          }
+        ]
+      }
+    ],
+    "dynamic_filters": [
+      {
+        "label_id": 1,
+        "label_name": "Category",
+        "label": "Category",
+        "type": "image",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 5187,
+            "display_name": "Women Slingbag",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiNTE4NyJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1704463344157.jpg",
+            "selected": false
+          },
+          {
+            "label_value_id": 2645,
+            "display_name": "Cross Body Bags & Sling Bags",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjY0NSJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1659982685217.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2409,
+            "display_name": "Potlis",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjQwOSJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1659982551697.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2416,
+            "display_name": "Handbags Set",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjQxNiJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1659981854986.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 3764,
+            "display_name": "Women Backpacks",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMzc2NCJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1663582624334.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2411,
+            "display_name": "Waist Bags",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjQxMSJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1659983155873.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 2423,
+            "display_name": "Wallets",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjQyMyJ9",
+            "image_url": "https://images.meesho.com/images/marketing/1659982950649.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 276,
+            "display_name": "Clutches",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjc2In0=",
+            "image_url": "https://images.meesho.com/images/marketing/1659982850410.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 340,
+            "display_name": "Slingbags",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMzQwIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/286bb308-611e-4b1f-9931-cd225cdd61d0.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 294,
+            "display_name": "Handbags",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy4xIiwib3AiOiJpbiIsInZhbHVlIjoiMjk0In0=",
+            "image_url": "https://images.meesho.com/images/marketing/758c75fa-efdc-48b5-8c42-89b6a8052d2c.png",
+            "selected": false
+          }
+        ]
+      },
+      {
+        "label_id": 9,
+        "label_name": "Gender",
+        "label": "Gender",
+        "type": "image",
+        "search_enabled": false,
+        "values": [
+          {
+            "label_value_id": 443,
+            "display_name": "Women",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy45Iiwib3AiOiJpbiIsInZhbHVlIjoiNDQzIn0=",
+            "image_url": "https://images.meesho.com/images/marketing/1598808287970.png",
+            "selected": false
+          },
+          {
+            "label_value_id": 445,
+            "display_name": "Girls",
+            "payload": "eyJmaWVsZCI6ImxhYmVscy45Iiwib3AiOiJpbiIsInZhbHVlIjoiNDQ1In0=",
+            "image_url": "https://images.meesho.com/images/marketing/1598808357482.png",
+            "selected": false
+          }
+        ]
+      }
+    ],
+    "high_visibility_filter_values": [],
+    "sort_options": [
+      {
+        "sort_by": "most_relevant",
+        "display_name": "Relevance",
+        "sort_order": "desc",
+        "selected": true,
+        "default": true
+      },
+      {
+        "sort_by": "created",
+        "display_name": "New Arrivals",
+        "sort_order": "desc",
+        "selected": false,
+        "default": false
+      },
+      {
+        "sort_by": "price",
+        "display_name": "Price (High to Low)",
+        "sort_order": "desc",
+        "selected": false,
+        "default": false
+      },
+      {
+        "sort_by": "price",
+        "display_name": "Price (Low to High)",
+        "sort_order": "asc",
+        "selected": false,
+        "default": false
+      },
+      {
+        "sort_by": "rating",
+        "display_name": "Ratings",
+        "sort_order": "desc",
+        "selected": false,
+        "default": false
+      },
+      {
+        "sort_by": "discount",
+        "display_name": "Discount",
+        "sort_order": "desc",
+        "selected": false,
+        "default": false
+      }
+    ]
+  }
+]

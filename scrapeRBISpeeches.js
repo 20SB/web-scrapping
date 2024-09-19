@@ -13,10 +13,21 @@ function delay(ms) {
 
 async function scrapeRbiSpeeches() {
     const url = "https://www.rbi.org.in";
-    const browser = await puppeteer.launch({ headless: false, defaultViewport: null });
+    const browser = await puppeteer.launch({
+        headless: false,
+        slowMo: 100,
+        defaultViewport: null,
+    });
     const page = await browser.newPage();
 
     try {
+        const allSpeeches = await Speech.find({});
+        const speechMap = new Map();
+        allSpeeches.forEach((speech) => {
+            const key = `${speech.date}-${speech.title}-${speech.speechLink}-${speech.pdfLink}`;
+            speechMap.set(key, true);
+        });
+
         await page.goto(url, { waitUntil: "networkidle2" });
 
         const menuItem = await page.waitForSelector("text=Speeches & Media Interactions", {
@@ -30,25 +41,15 @@ async function scrapeRbiSpeeches() {
         );
         const speechesItem = await page.evaluateHandle((ulElement) => {
             const listItems = ulElement.querySelectorAll("li");
-            for (const item of listItems) {
-                if (item.innerText.trim() === "Speeches") {
-                    return item;
-                }
-            }
-            return null;
+            return (
+                Array.from(listItems).find((item) => item.innerText.trim() === "Speeches") || null
+            );
         }, siblingElement);
 
         await speechesItem.click();
-        await page.waitForNavigation({ waitUntil: "networkidle2" });
+        await page.waitForNavigation({ waitUntil: "load" });
 
         const currentYear = new Date().getFullYear();
-
-        const allSpeeches = await Speech.find({});
-        const speechMap = new Map();
-        allSpeeches.forEach((speech) => {
-            const key = `${speech.date}-${speech.title}-${speech.speechLink}-${speech.pdfLink}`;
-            speechMap.set(key, true);
-        });
 
         let totalNewData = 0;
         let totalscrapedData = 0;
