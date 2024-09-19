@@ -9,7 +9,6 @@ async function scrapeMeesho() {
     const url = "https://www.meesho.com/bags-ladies/pl/3jo";
     const browser = await puppeteer.launch({
         headless: false,
-        slowMo: 100,
         defaultViewport: null,
     });
     const page = await browser.newPage();
@@ -17,15 +16,17 @@ async function scrapeMeesho() {
     let allResponseData = []; // To store all response data
 
     try {
+        // Listen for console messages from the browser
+        page.on("console", (msg) => {
+            console.log("PAGE LOG:", msg.text());
+        });
+
         // Intercept and modify requests
         await page.setRequestInterception(true);
         console.log("Ready for interception");
 
         page.on("request", (request) => {
-            if (
-                request.url() == "https://www.meesho.com/api/v1/products" &&
-                request.method() === "POST"
-            ) {
+            if (request.url() === "https://www.meesho.com/api/v1/products") {
                 try {
                     console.log("Intercepting request to modify payload");
 
@@ -57,12 +58,12 @@ async function scrapeMeesho() {
 
         // Listen for the response
         page.on("response", async (response) => {
-            if (response.url() == "https://www.meesho.com/api/v1/products") {
+            if (response.url() === "https://www.meesho.com/api/v1/products") {
                 try {
                     console.log("Received response from products API");
 
                     const responseData = await response.json();
-                    console.log("Response Data:", responseData);
+                    // console.log("Response Data:", responseData);
 
                     // Store the response data
                     allResponseData.push(responseData);
